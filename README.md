@@ -1,3 +1,7 @@
+Context : Aformac training for professional title Software developper
+
+Personnel :
+
 # Ergonomie des formulaires : guider l'utilisateur, simplifier le code
 
 [Les attributs & pseudo-classes associées](#attributs)
@@ -10,36 +14,36 @@
 
 ## **Les balises HTML** :
 
-|    ** < input type=  ** |   |  **\>  **|
-|: :|: :|: :|: :|
-|   | Text / Search |   ![](img/input.png)
-|    | Number | ![](img/number.png)| *valide si :* (int)
-|    | Range | ![](img/range.png) | *min=  max=* | oninput= et < output>\* pour résultat
-|    | Radio| ![](img/radio.png)
-|    | Checkbox| ![](img/checkbox.png)
-|    | Date / Datetime / Datetime-local | ![](img/date.png)  | ![](img/warning-.png) *IE & Firefox* :  pas supporté, sauf date pour Firefox... ![](img/input.png)
-|    | Month / Week | ![](img/week.png)  |  ![](img/warning-.png) *IE & Firefox* : pas supportés...  ![](img/input.png)
-|    | Time |![](img/time.png) |  ![](img/warning-.png) *IE* : pas supporté...  ![](img/input.png)
-|    | Email | ![](img/input.png) |*valide si :* a**@**a
-|    | Password | *caractères cachés *  ![](img/password.png)
-|    | URL |![](img/input.png) |
-|    | File |![](img/file.png) |
-|    | Color |![](img/color.png) |
-|    | Hidden | *- pour y cacher une valeur par défaut ?*
-|    | Button|![](img/button.png) | *value=*
-|    | Reset |![](img/reset.png)| *réinitialise tous les champs du formulaire*
-|    | Image *src= alt=*|  ![](img/inputImage.png) |  * il s'agit d'un __submit__ graphique : renvoie coordonnées du clic ( / image) *
-|    | Submit|![](img/submit.png) |
-|    ** < input list=  >**  | < datalist >  * < option>  <òption>* </ datalist > | ![](img/datalist.png) | *liste informative, qui se réduit selon entrées utilisateur*
-|**   < button> **| *< img> blabla* | ![](img/buttonTag.png)  | **< /button> **|
-|** < select>** | < optgroup label="" > | ![](img/selectOptgroup.png)| < option> </ option> </ optgroup> |** </ select>**
-|** < select *multiple* >** | * - size = nb de lignes (multiple ou non) - *| ![](img/selectMultiple.png) | < option> </ option> |** </ select>**
-| ** < textarea> ** | *cols= rows=* |  ![](img/textarea.png)| **</ textarea> ** |
-| ** < progress> ** |  *value= max=* | ![](img/progress.png)| ** </ progress> ** | *barre remplie de façon dynamique grâce au rapport entre la value et le max*
-| ** < meter> ** |  *value= * | ![](img/meter.png) ![](img/warning-.png) *IE * : pas supporté| ** </ meter> ** | *jauge remplie de façon statique, par défaut min=0 et max=1 ; change de couleur si valeur au-delà de high= ou low=* |
-|**   * < fieldset> ***  |- *cadre, non interactif* -| ![](img/fieldset.png)| < legend> </ legend>|**   * </ fieldset> ***  |
+|    < input type=  |   |  \> | |
+|----|---               |---                   |---                 |
+|    | Text / Search    | ![](img/input.png)   |                    |           
+|    | Number           | ![](img/number.png)  |*valide si :* (int) |           
+|    | Range            | ![](img/range.png)   | *min=  max=*       | oninput= et < output>\* pour résultat    
+|    | Radio            | ![](img/radio.png)   |                    |           
+|    | Checkbox         | ![](img/checkbox.png)    |                |           
+|    | Date / Datetime / Datetime-local | ![](img/date.png)  | ![](img/warning-.png) *IE & Firefox* :  pas supporté, sauf date pour Firefox... ![](img/input.png)       |    
+|    | Month / Week     | ![](img/week.png)    |  ![](img/warning-.png) *IE & Firefox* : pas supportés...  ![](img/input.png) |    
+|    | Time             | ![](img/time.png)    |  ![](img/warning-.png) *IE* : pas supporté...  ![](img/input.png)    |    
+|    | Email            | ![](img/input.png)   |  *valide si :* a**@**a    |    
+|    | Password         | *caractères cachés *  ![](img/password.png)    |    |    
+|    | URL              | ![](img/input.png)   |                    |           
+|    | File             | ![](img/file.png)    |                    |           
+|    | Color            | ![](img/color.png)   |                    |                   
+|    | Hidden           | *- pour y cacher une valeur par défaut ?* |    |     
+|    | Button           | ![](img/button.png)  | *value=*           |          
+|    | Reset            | ![](img/reset.png)| *réinitialise tous les champs du formulaire*    |    |
+|    | Image *src= alt=* |  ![](img/inputImage.png) |  * il s'agit d'un __submit__ graphique : renvoie coordonnées du clic ( / image) *    |
+|    | Submit|![](img/submit.png) |            |                    |
+|    ** < input list=  >**  | < datalist >  * < option>  <òption>* </ datalist > | ![](img/datalist.png) | *liste informative, qui se réduit selon entrées utilisateur*    |    |
+| **   < button> **  | *< img> blabla* | ![](img/buttonTag.png)  | **< /button> ** |   
+| ** < select>** | < optgroup label="" > | ![](img/selectOptgroup.png) | < option> </ option> </ optgroup> |** </ select>**
+| ** < select *multiple* >** | * - size = nb de lignes (multiple ou non) - * | ![](img/selectMultiple.png) | < option> </ option> | ** </ select>**
+| ** < textarea> ** | *cols= rows=* |  ![](img/textarea.png) | **</ textarea> ** |
+| ** < progress> ** | *value= max=* | ![](img/progress.png)  | ** </ progress>** | *barre remplie de façon dynamique grâce au rapport entre la value et le max*
+| ** < meter> **    |  *value= *    | ![](img/meter.png) ![](img/warning-.png) *IE * : pas supporté| ** </ meter> ** | *jauge remplie de façon statique, par défaut min=0 et max=1 ; change de couleur si valeur au-delà de high= ou low=* |
+|**   * < fieldset> ***  | - *cadre, non interactif* - | ![](img/fieldset.png) | < legend> </ legend> |**   * </ fieldset> ***
 |**   * < label*** *for=* ***> *** |- *information, non interactif* -| ***</ label>***
-|**   * < output >* *** |- *résultat, non interactif* -|**   * < output > *** |
+|**   * < output >* *** | - *résultat, non interactif* - |**   * < output > *** |    |
 
 **\*** Exemples d'utilisation d'une balise **< output > : **
 

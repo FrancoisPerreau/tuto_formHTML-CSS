@@ -1,7 +1,3 @@
-Context : Aformac training for professional title Software developper
-
-Personnel :
-
 # Ergonomie des formulaires : guider l'utilisateur, simplifier le code
 
 [Les attributs & pseudo-classes associées](#attributs)
@@ -12,7 +8,7 @@ Personnel :
 
 [Les pseudo-éléments généralistes](#generalElement)
 
-## **Les balises HTML** :
+## __Les balises HTML__ :
 
 |    < input type=  |   |  \> | |
 |----|---               |---                   |---                 |
@@ -24,33 +20,33 @@ Personnel :
 |    | Date / Datetime / Datetime-local | ![](img/date.png)  | ![](img/warning-.png) *IE & Firefox* :  pas supporté, sauf date pour Firefox... ![](img/input.png)       |    
 |    | Month / Week     | ![](img/week.png)    |  ![](img/warning-.png) *IE & Firefox* : pas supportés...  ![](img/input.png) |    
 |    | Time             | ![](img/time.png)    |  ![](img/warning-.png) *IE* : pas supporté...  ![](img/input.png)    |    
-|    | Email            | ![](img/input.png)   |  *valide si :* a__@__a    |    
-|    | Password         | *caractères cachés *  ![](img/password.png)    |    |    
+|    | Email            | ![](img/input.png)   |  *valide si :* a __@__ a    |    
+|    | Password         | *caractères cachés*  ![](img/password.png)    |    |    
 |    | URL              | ![](img/input.png)   |                    |           
 |    | File             | ![](img/file.png)    |                    |           
 |    | Color            | ![](img/color.png)   |                    |                   
 |    | Hidden           | *- pour y cacher une valeur par défaut ?* |    |     
 |    | Button           | ![](img/button.png)  | *value=*           |          
 |    | Reset            | ![](img/reset.png)| *réinitialise tous les champs du formulaire*    |    |
-|    | Image *src= alt=* |  ![](img/inputImage.png) |  * il s'agit d'un __submit__ graphique : renvoie coordonnées du clic ( / image) *    |
+|    | Image *src= alt=* |  ![](img/inputImage.png) |  *il s'agit d'un __submit__ graphique : renvoie coordonnées du clic ( / image)*    |
 |    | Submit|![](img/submit.png) |            |                    |
-|    __ < input list=  >__  | < datalist >  * < option>  <òption>* </ datalist > | ![](img/datalist.png) | *liste informative, qui se réduit selon entrées utilisateur*    |    |
-| __   < button> __  | *< img> blabla* | ![](img/buttonTag.png)  | __< /button> __ |   
-| __ < select>__ | < optgroup label="" > | ![](img/selectOptgroup.png) | < option> </ option> </ optgroup> | __ </ select>__
-| __ < select *multiple* >__ | * - size = nb de lignes (multiple ou non) - * | ![](img/selectMultiple.png) | < option> </ option> | __ </ select>__
-| __ < textarea> __ | *cols= rows=* |  ![](img/textarea.png) | __</ textarea> __ |
-| __ < progress> __ | *value= max=* | ![](img/progress.png)  | __ </ progress>__ | *barre remplie de façon dynamique grâce au rapport entre la value et le max*
-| __ < meter> __    |  *value= *    | ![](img/meter.png) ![](img/warning-.png) *IE * : pas supporté| __ </ meter> __ | *jauge remplie de façon statique, par défaut min=0 et max=1 ; change de couleur si valeur au-delà de high= ou low=* |
-|__   * < fieldset> *__  | - *cadre, non interactif* - | ![](img/fieldset.png) | < legend> </ legend> |__   * </ fieldset> * __
-| __ * < label*__ for=* __> __* |- *information, non interactif* -| *__</ label>__*
-|__   * < output >* __*| - *résultat, non interactif* - |__   * < output > *__ |    |
+|    __< input list=  >__  | < datalist >  *< option>  <òption>* </ datalist > | ![](img/datalist.png) | *liste informative, qui se réduit selon entrées utilisateur*    |    |
+| __< button>__  | *< img> blabla* | ![](img/buttonTag.png)  | __< /button>__ |   
+| __< select>__ | < optgroup label="" > | ![](img/selectOptgroup.png) | < option> </ option> </ optgroup> | __ </ select>__
+| __< select *multiple* >__ | *size = nb de lignes (multiple ou non)* | ![](img/selectMultiple.png) | < option> </ option> | __ </ select>__
+| __< textarea>__ | *cols= rows=* |  ![](img/textarea.png) | __</ textarea>__ |
+| __< progress>__ | *value= max=* | ![](img/progress.png)  | __</ progress>__ | *barre remplie de façon dynamique grâce au rapport entre la value et le max*
+| __< meter>__    |  *value=*    | ![](img/meter.png) ![](img/warning-.png) *IE* : pas supporté| __</ meter>__ | *jauge remplie de façon statique, par défaut min=0 et max=1 ; change de couleur si valeur au-delà de high= ou low=* |
+| __*< fieldset>*__  | - *cadre, non interactif* - | ![](img/fieldset.png) | < legend> </ legend> |__   *</ fieldset>* __
+| __*< label*__ for= __*>*__ |- *information, non interactif* -| *__</ label>__*
+| __*< output >*__ \* | - *résultat, non interactif* - | __*< output >*__ |    |
 
-\* Exemples d'utilisation d'une balise __< output > : __
+\* Exemples d'utilisation d'une balise __< output > :__
 
 pour un calcul :
-> < form __oninput = " result.value = __parseInt__(nb1.value) / __parseInt__(nb2.value) "__>
+> < form __oninput = " result.value =__ parseInt __(nb1.value) /__ parseInt __(nb2.value) "__>
 
-> < input id="nb1"> / < input id="nb2"> = __< output name=__"result" __for=__"nb1 nb2"__>__
+> < input id="nb1"> / < input id="nb2"> = __< output name=__ "result" __for=__ "nb1 nb2" __>__
 
 pour afficher la valeur d'un range :
 > < input type="range" __id="input"__  min="1" max="100" __oninput="output.value = input.value"__>
@@ -86,25 +82,25 @@ Par défaut, le focus *(tab)* suit l'ordre d'apparition des éléments dans le f
 
 #### checked
 Pour les cases à cocher uniquement : case cochée au chargement de la page.
-|-> *A utiliser avec la **pseudo-classe** CSS* **:checked**
+|-> *A utiliser avec la __pseudo-classe__ CSS* __:checked__
 
 #### title=""
 S'applique à tout élément HTML (sauf range ?) pour faire apparaître une bulle de texte guidant l'utilisateur. Bien utile sur les formulaires lorsque des contraintes ou possibilités spécifiques existent !
 
 #### multiple
 Fonctionne avec :
-* <**select**>
-* < input **type="file"**>
-* < input **type="email"**>. Pour entrer plusieurs emails, les séparer d'une virgule. ![](img/warning-.png) Mettre un title pour en informer l'utilisateur !
+* <__select__>
+* < input __type="file"__>
+* < input __type="email"__>. Pour entrer plusieurs emails, les séparer d'une virgule. ![](img/warning-.png) Mettre un title pour en informer l'utilisateur !
 
 #### pattern="" , min= , max= , step=
-* **pattern** : L'entrée utilisateur doit correspondre à l'expression régulière pour être valide.
+* __pattern__ : L'entrée utilisateur doit correspondre à l'expression régulière pour être valide.
 > pattern="[0-9]{3}"  pour le code d'un département
-* **min**, **max** : *(type="number" ou type="range")* valeurs numériques minimales et maximales autorisées. Sans minimum, les nombres peuvent être négatifs.
-* **step** : *(type="number" ou type="range")* 'pas' ou écart entre deux valeurs numériques successives **(conditionne l'incrémentation)**.
+* __min__, __max__ : *(type="number" ou type="range")* valeurs numériques minimales et maximales autorisées. Sans minimum, les nombres peuvent être négatifs.
+* __step__ : *(type="number" ou type="range")* 'pas' ou écart entre deux valeurs numériques successives __(conditionne l'incrémentation)__.
 > ![](img/warning-.png) min=1 step=2 rendra invalides les nombres pairs rentrés directement par l'utilisateur.
 
-|-> *A utiliser avec les **pseudo-classes** CSS* **:valid** *&* **:invalid** *, et/ou * **:in-range** & **:out-of-range** * qui ne considèrent que le min et max autorisés et non le step ou le pattern.*
+|-> *A utiliser avec les __pseudo-classes__ CSS* __:valid__ *&* __:invalid__ *, et/ou* __:in-range__ & __:out-of-range__ *qui ne considèrent que le min et max autorisés et non le step ou le pattern.*
 
 ![](img/warning-.png) Un champ vide est valide par défaut. ![](img/warning-.png) Ne pas utiliser seul : les éléments non formulaire sont considérés aussi, avec des résultats variés.
 
@@ -113,34 +109,35 @@ Bloque en écriture lorsque le nombre de caractères est atteint.
 
 #### autocomplete=
 Suggère une donnée entrée précédemment lorsque la/les première(s) lettres correspondent.
-Deux valeurs possibles : **on** ou **off**. Peut s'appliquer au formulaire dans son intégralité et/ou à un champ particulier.
+Deux valeurs possibles : __on__ ou __off__. Peut s'appliquer au formulaire dans son intégralité et/ou à un champ particulier.
 
 #### required & optional
-* **required** : si l'utilisateur ne donne pas de valeur au champ, empêche l'envoi (message).
-* **optional** : par défaut ; vide, le champ n'empêche pas l'envoi.
+* __required__ : si l'utilisateur ne donne pas de valeur au champ, empêche l'envoi (message).
+* __optional__ : par défaut ; vide, le champ n'empêche pas l'envoi.
 
-|-> *A utiliser avec les **pseudo-classes** CSS* **:required** *&* **:optional**
+|-> *A utiliser avec les __pseudo-classes__ CSS* __:required__ *&* __:optional__
 
 #### disabled & readonly
-* **disabled** : empêche l'interaction utilisateur sur l'élément. Par défaut le bouton ou le champ est grisé. Aucune valeur ne sera envoyée. Tab ne lui donnera pas le focus.
-* **readonly** : empêche l'utilisateur de modifier la valeur de l'élément, mais elle sera bel et bien envoyée avec le formulaire. Tab lui donnera le focus. Grisé par défaut. Ne fonctionne pas avec < select > < button > < option >.
+* __disabled__ : empêche l'interaction utilisateur sur l'élément. Par défaut le bouton ou le champ est grisé. Aucune valeur ne sera envoyée. Tab ne lui donnera pas le focus.
+* __readonly__ : empêche l'utilisateur de modifier la valeur de l'élément, mais elle sera bel et bien envoyée avec le formulaire. Tab lui donnera le focus. Grisé par défaut. Ne fonctionne pas avec < select > < button > < option >.
 
-|-> *A utiliser avec les **pseudo-classes** CSS* **:disabled** *&* **:enabled**.
+|-> *A utiliser avec les __pseudo-classes__ CSS* __:disabled__ *&* __:enabled__.
 
-![](img/warning-.png) La pseudo-classe **:read-only** ou **:-moz-read-only** ne concerne que quelques navigateurs. Sa contraire **:read-write** est mieux supporté, mais pas par IE, et elle ne concerne que les input text (et textarea).
+![](img/warning-.png) La pseudo-classe __:read-only__ ou __:-moz-read-only__ ne concerne que quelques navigateurs. Sa contraire __:read-write__ est mieux supporté, mais pas par IE, et elle ne concerne que les input text (et textarea).
 
 #### hidden
-L'attribut **hidden** glissé dans un tag équivaut au css **display: none;** ![](img/warning-.png) (voir ci-après).
+L'attribut __hidden__ glissé dans un tag équivaut au css __display: none;__ ![](img/warning-.png) (voir ci-après).
 
 ### Les attributs du formulaire
 #### target=""
 Détermine où afficher la réponse serveur après soumission du formulaire. Comme pour les liens, peut prendre les valeurs :
-* **\_blank** (nouvel onglet ou page)
-* **\_self** (iframe/page actuelle, par défaut)
-* **iframe_name** (s'affiche dans l'iframe nommé)
+
+* &nbsp;**_blank** (nouvel onglet ou page)
+* __\_self__ (iframe/page actuelle, par défaut)
+* __*iframe_name*__ (s'affiche dans l'iframe nommé)
 
 
-## **<a id="pseudoClass">Les pseudo-classes généralistes</a>** :
+## __<a id="pseudoClass">Les pseudo-classes généralistes</a>__ :
 
 #### :hover
 Au survol : outre un changement d'apparence, hover peut par exemple permettre de styliser une "infobulle" maison :
@@ -150,41 +147,41 @@ Au survol : outre un changement d'apparence, hover peut par exemple permettre de
 >      display: none;
 }
 
-> div**:hover** p {
+> div__:hover__ p {
 
 >      display: block;
 }
 
-###### *Note : *visibility: hidden; & display: none;
+###### *Note :* visibility: hidden; & display: none;
 Ces propriétés CSS sont extrêmement utiles pour cacher une partie du formulaire qui ne concerne que certaines situations, et la faire réapparaître si l'utilisateur a entré des données qui la rendent pertinente (exemple : renseignements sur les enfants inutiles si on a zéro enfant).
 
-* **visibility:hidden** : on ne voit plus l'élément ni ses enfants, par contre la place est toujours prise. Pour le faire réapparaître on utilise **visibility:visible**.
-* **display:none** : l'élément est retiré avec ses enfants, le reste du code remonte de façon à prendre sa place. L'élément n'est cependant pas détruit et on peut le rétablir à tout moment grâce à un display approprié : **display:flex|inline|block|....**
+* __visibility:hidden__ : on ne voit plus l'élément ni ses enfants, par contre la place est toujours prise. Pour le faire réapparaître on utilise __visibility:visible__.
+* __display:none__ : l'élément est retiré avec ses enfants, le reste du code remonte de façon à prendre sa place. L'élément n'est cependant pas détruit et on peut le rétablir à tout moment grâce à un display approprié : __display:flex|inline|block|....__
 
 #### :active
 Au clic : comme hover, peut (fugacement) modifier ou faire apparaître quelque chose (l'image du bouton cliqué). Moins durable...
 
 #### :lang()
-Si on a renseigné dans des tags l'**attribut lang=""** (fr, en, fr-FR, en-US, ru, en...), on peut cibler ces éléments en css grâce à la pseudo-class **:lang()**
+Si on a renseigné dans des tags l'__attribut lang=""__ (fr, en, fr-FR, en-US, ru, en...), on peut cibler ces éléments en css grâce à la pseudo-class __:lang()__
 
-> < html **lang="fr"**> < blockquote **lang="en"**> *A person who never made a mistake never made anything new.* < /blockquote>
+> < html __lang="fr"__> < blockquote __lang="en"__> *A person who never made a mistake never made anything new.* < /blockquote>
 
-> < style> **:lang(en)**  {  font-style: italic;   } < /style>
+> < style> __:lang(en)__  {  font-style: italic;   } < /style>
 
 *Note* : :lang(fr) trouve les lang="fr" et les lang="fr-FR").
 
 ### Cibler certains éléments selon leur ordre, type, enfants...
 #### :first-child, :nth-child(), :last-child
 Cible le premier, le nième, le dernier enfant de l'élément, mais aussi :
-* les enfants pairs **:nth-child(even)**
-* les enfants impairs **:nth-child(odd)**
-* tous les trois enfants en commençant par le premier **:nth-child(3n+1)** - ou autre
+* les enfants pairs __:nth-child(even)__
+* les enfants impairs __:nth-child(odd)__
+* tous les trois enfants en commençant par le premier __:nth-child(3n+1)__ - ou autre
 
 #### :first-of-type, :nth-of-type(), :last-of-type, :nth-last-of-type(), only-of-type
 De la même manière que les -child, cible le premier, le nième, le dernier élément du type indiqué, pour chaque niveau :
-* par exemples les lignes paires de chaque tableau : tr:**nth-of-type(even)**
-* **:nth-last-of-type(2)** : l'avant-dernier du type (par exemple avec des li, si le dernier est simplement informatif)
-* input[type="option"]**:only-of-type** : seulement s'il est le seul élément de ce type à un niveau donné
+* par exemples les lignes paires de chaque tableau : tr:__nth-of-type(even)__
+* __:nth-last-of-type(2)__ : l'avant-dernier du type (par exemple avec des li, si le dernier est simplement informatif)
+* input[type="option"]__:only-of-type__ : seulement s'il est le seul élément de ce type à un niveau donné
 
 #### :not()
 Sélectionne tout ce qui n'est pas... ![](img/warning-.png) il faut avoir stylisé les propriétés de l'élément pour que les mêmes propriétés ne s'appliquent qu'aux non-éléments.
@@ -200,7 +197,7 @@ Sélectionne tout ce qui n'est pas... ![](img/warning-.png) il faut avoir stylis
       }
 
 #### :empty
-![](img/warning-.png) Ne désigne pas un champ sans valeur mais un **élément sans innerHTML**, en dur dans le code :
+![](img/warning-.png) Ne désigne pas un champ sans valeur mais un __élément sans innerHTML__, en dur dans le code :
 
 * Un paragraphe pour être *empty* ne doit contenir ni balises ni texte.
 * Un textarea vide dans le code reste *empty* quand l'utilisateur le remplit.
@@ -217,21 +214,21 @@ Utilité : définir la taille de base, en pixels, des polices de caractères, pe
 
 > div { width: 60em; }
 
-## **<a id="pseudoElement">Les pseudo-éléments</a>**
-Contrairement aux pseudo-classes, les pseudo-éléments en HTML5 sont annoncés par **deux ::**. Ce sont des éléments sans balise, soit qui s'ajoutent (::before & ::after), soit qui délimitent une partie du contenu d'une balise.
+## __<a id="pseudoElement">Les pseudo-éléments</a>__
+Contrairement aux pseudo-classes, les pseudo-éléments en HTML5 sont annoncés par __deux ::__. Ce sont des éléments sans balise, soit qui s'ajoutent (::before & ::after), soit qui délimitent une partie du contenu d'une balise.
 
-Il n'y a que cinq pseudo-éléments généralistes ; **les pseudo-éléments de formulaire ne sont pas standards** et dépendent donc des navigateurs.
+Il n'y a que cinq pseudo-éléments généralistes ; __les pseudo-éléments de formulaire ne sont pas standards__ et dépendent donc des navigateurs.
 
-Les éléments de formulaire ont tous une apparence différente selon le navigateur, et leurs pseudo-classes sont appelées différemment. Les préfixes à utiliser sont **-moz-** pour Firefox, **-webkit-** pour Safari et Chrome, **-o-** pour Opera et **-ms-** pour Internet Explorer. Parfois, l'appellation sans préfixe sera utilisée par tel ou tel navigateur. Mieux vaut vérifier avant de se lancer.
+Les éléments de formulaire ont tous une apparence différente selon le navigateur, et leurs pseudo-classes sont appelées différemment. Les préfixes à utiliser sont __-moz-__ pour Firefox, __-webkit-__ pour Safari et Chrome, __-o-__ pour Opera et __-ms-__ pour Internet Explorer. Parfois, l'appellation sans préfixe sera utilisée par tel ou tel navigateur. Mieux vaut vérifier avant de se lancer.
 
-Jouer avec ces pseudo-éléments de formulaire permet d'homogénéiser autant que personnaliser ces apparences par défaut. Pour **enlever toutes les valeurs de l'apparence par défaut** :
-> form * {
+Jouer avec ces pseudo-éléments de formulaire permet d'homogénéiser autant que personnaliser ces apparences par défaut. Pour __enlever toutes les valeurs de l'apparence par défaut__ :
+> form \* {
 
->  &nbsp; &nbsp; **-webkit-appearance: none;** // Chrome,
+>  &nbsp; &nbsp; __-webkit-appearance: none;__ // Chrome,
 
->  &nbsp; &nbsp;  **-moz-appearance:    none;**
+>  &nbsp; &nbsp;  __-moz-appearance:    none;__
 
->  &nbsp; &nbsp;  **appearance:         none;**
+>  &nbsp; &nbsp;  __appearance:         none;__
 
 > }
 
@@ -246,29 +243,29 @@ Sous Firefox, l'élément qui a le focus est entouré d'une bordure en pointill�
 
 Le track est la barre, le thumb le curseur. Si l'on veut styliser les deux éléments, il faut également penser à les styliser en :hover :focus et :active. Voici comment les pseudo-classes et éléments peuvent s'enchaîner :
 
-> input[type=range]**:hover::-webkit-slider-thumb:before**
+> input[type=range]__:hover::-webkit-slider-thumb:before__
 
  ![](img/warning-.png) Consulter la documentation des navigateurs pour connaître tous les pseudo-éléments d'un type d'élément de formulaire donné.
 
 
-### **<a id="generalElement">Pseudo-éléments généralistes</a>** :
+### __<a id="generalElement">Pseudo-éléments généralistes</a>__ :
 
 #### ::selection
 Ce qui est sélectionné par l'utilisateur.
 
 #### ::before & ::after
-La seule propriété indispensable de ces pseudo-éléments, c'est **content=**;, que l'on peut remplir avec :
-> une chaîne de caractère (avec guillemets) : **content: "";**  ou **content: "Note: ";**
+La seule propriété indispensable de ces pseudo-éléments, c'est __content=__;, que l'on peut remplir avec :
+> une chaîne de caractère (avec guillemets) : __content: "";__  ou __content: "Note: ";__
 
-> une image (sans guillemets) : **content: url(**icon.png**);**
+> une image (sans guillemets) : __content: url(__icon.png__);__
 
-> un compteur de liste (sans guillemets) :  **content: counter(**var**)**;
+> un compteur de liste (sans guillemets) :  __content: counter(__var__)__;
 
 Si l'on veut mettre plusieurs éléments (compteur et texte par ex), on les sépare juste d'un espace :
 
 > ul {
 
-> &nbsp; &nbsp; &nbsp; &nbsp; **counter-reset**: chap; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; * // initialise le compteur : on le place au niveau du parent des entrées de la liste, et on lui donne un nom (ici chap) *
+> &nbsp; &nbsp; &nbsp; &nbsp; __counter-reset__: chap; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  // *initialise le compteur : on le place au niveau du parent des entrées de la liste, et on lui donne un nom (ici chap)*
 
 > }
 
@@ -276,11 +273,11 @@ Si l'on veut mettre plusieurs éléments (compteur et texte par ex), on les sép
 
 > &nbsp; &nbsp; &nbsp; &nbsp; counter-increment: chap;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *// incrémente le compteur*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; content: **url(**puce.png**) "** chapitre **" counter(**chap**)**; &nbsp; &nbsp; &nbsp; *// donne : ** chapitre 1 *
+> &nbsp; &nbsp; &nbsp; &nbsp; content: __url(__puce.png__) "__ chapitre __" counter(__chap__)__; &nbsp; &nbsp; &nbsp; // *donne : * __\* chapitre 1__
 
 > }
 
-Ces pseudo-éléments sont **par défaut en display: inline;**. Pour les dimensionner et les positionner autrement, il faudra changer pour du **display: inline-block; ou du display: block;.**
+Ces pseudo-éléments sont __par défaut en display: inline;__. Pour les dimensionner et les positionner autrement, il faudra changer pour du __display: inline-block; ou du display: block;.__
 
 #### ::first-letter & ::first-line
 Comme pour le ::before ou ::after, si l'on souhaite changer les dimensions ou la position de la première lettre/ligne, il faudra changer son display (par défaut inline).

@@ -24,7 +24,7 @@ Personnel :
 |    | Date / Datetime / Datetime-local | ![](img/date.png)  | ![](img/warning-.png) *IE & Firefox* :  pas supporté, sauf date pour Firefox... ![](img/input.png)       |    
 |    | Month / Week     | ![](img/week.png)    |  ![](img/warning-.png) *IE & Firefox* : pas supportés...  ![](img/input.png) |    
 |    | Time             | ![](img/time.png)    |  ![](img/warning-.png) *IE* : pas supporté...  ![](img/input.png)    |    
-|    | Email            | ![](img/input.png)   |  *valide si :* a**@**a    |    
+|    | Email            | ![](img/input.png)   |  *valide si :* a__@__a    |    
 |    | Password         | *caractères cachés *  ![](img/password.png)    |    |    
 |    | URL              | ![](img/input.png)   |                    |           
 |    | File             | ![](img/file.png)    |                    |           
@@ -34,36 +34,36 @@ Personnel :
 |    | Reset            | ![](img/reset.png)| *réinitialise tous les champs du formulaire*    |    |
 |    | Image *src= alt=* |  ![](img/inputImage.png) |  * il s'agit d'un __submit__ graphique : renvoie coordonnées du clic ( / image) *    |
 |    | Submit|![](img/submit.png) |            |                    |
-|    ** < input list=  >**  | < datalist >  * < option>  <òption>* </ datalist > | ![](img/datalist.png) | *liste informative, qui se réduit selon entrées utilisateur*    |    |
-| **   < button> **  | *< img> blabla* | ![](img/buttonTag.png)  | **< /button> ** |   
-| ** < select>** | < optgroup label="" > | ![](img/selectOptgroup.png) | < option> </ option> </ optgroup> |** </ select>**
-| ** < select *multiple* >** | * - size = nb de lignes (multiple ou non) - * | ![](img/selectMultiple.png) | < option> </ option> | ** </ select>**
-| ** < textarea> ** | *cols= rows=* |  ![](img/textarea.png) | **</ textarea> ** |
-| ** < progress> ** | *value= max=* | ![](img/progress.png)  | ** </ progress>** | *barre remplie de façon dynamique grâce au rapport entre la value et le max*
-| ** < meter> **    |  *value= *    | ![](img/meter.png) ![](img/warning-.png) *IE * : pas supporté| ** </ meter> ** | *jauge remplie de façon statique, par défaut min=0 et max=1 ; change de couleur si valeur au-delà de high= ou low=* |
-|**   * < fieldset> ***  | - *cadre, non interactif* - | ![](img/fieldset.png) | < legend> </ legend> |**   * </ fieldset> ***
-|**   * < label*** *for=* ***> *** |- *information, non interactif* -| ***</ label>***
-|**   * < output >* *** | - *résultat, non interactif* - |**   * < output > *** |    |
+|    __ < input list=  >__  | < datalist >  * < option>  <òption>* </ datalist > | ![](img/datalist.png) | *liste informative, qui se réduit selon entrées utilisateur*    |    |
+| __   < button> __  | *< img> blabla* | ![](img/buttonTag.png)  | __< /button> __ |   
+| __ < select>__ | < optgroup label="" > | ![](img/selectOptgroup.png) | < option> </ option> </ optgroup> | __ </ select>__
+| __ < select *multiple* >__ | * - size = nb de lignes (multiple ou non) - * | ![](img/selectMultiple.png) | < option> </ option> | __ </ select>__
+| __ < textarea> __ | *cols= rows=* |  ![](img/textarea.png) | __</ textarea> __ |
+| __ < progress> __ | *value= max=* | ![](img/progress.png)  | __ </ progress>__ | *barre remplie de façon dynamique grâce au rapport entre la value et le max*
+| __ < meter> __    |  *value= *    | ![](img/meter.png) ![](img/warning-.png) *IE * : pas supporté| __ </ meter> __ | *jauge remplie de façon statique, par défaut min=0 et max=1 ; change de couleur si valeur au-delà de high= ou low=* |
+|__   * < fieldset> *__  | - *cadre, non interactif* - | ![](img/fieldset.png) | < legend> </ legend> |__   * </ fieldset> * __
+| __ * < label*__ for=* __> __* |- *information, non interactif* -| *__</ label>__*
+|__   * < output >* __*| - *résultat, non interactif* - |__   * < output > *__ |    |
 
-**\*** Exemples d'utilisation d'une balise **< output > : **
+\* Exemples d'utilisation d'une balise __< output > : __
 
 pour un calcul :
-> < form **oninput = " result.value = **parseInt**(nb1.value) / **parseInt**(nb2.value) "**>
+> < form __oninput = " result.value = __parseInt__(nb1.value) / __parseInt__(nb2.value) "__>
 
-> < input id="nb1"> / < input id="nb2"> = **< output name=**"result" **for=**"nb1 nb2"**>**
+> < input id="nb1"> / < input id="nb2"> = __< output name=__"result" __for=__"nb1 nb2"__>__
 
 pour afficher la valeur d'un range :
-> < input type="range" **id="input"**  min="1" max="100" **oninput="output.value = input.value"**>
+> < input type="range" __id="input"__  min="1" max="100" __oninput="output.value = input.value"__>
 
-> **< output id="output"></output>**
+> __< output id="output"></output>__
 
 
-## **<a id="attributs">Les attributs HTML et leurs pseudo-classes CSS associées</a>**
+## __<a id="attributs">Les attributs HTML et leurs pseudo-classes CSS associées</a>__
 Une pseudo-classe CSS se réfère à un état particulier de l’élément, ou à un élément répondant à telle ou telle condition. Parmi les plus connues, il y a les états d’un lien : non visité, survolé, actif, visité, ou encore les nth-child.
 
 La syntaxe est celle-ci :
 
-> *selector**:pseudo-class***   {
+> *selector__:pseudo-class__*   {
 
 > 	 property: value;
 > }
@@ -73,16 +73,16 @@ Un certain nombre de pseudo-classes sont spécifiques aux éléments de formulai
 ![](img/warning-.png) Lorsqu'on stylise la pseudo-classe d'un élément, la mise en forme sur l'élément lui-même n'est pas appliquée (on repart d'une base vierge).
 
 #### autofocus & tabindex=
-- **autofocus** : L'élément a le focus au chargement de la page. Attribut sans paramètre.
-- **tabindex** : Détermine l'ordre de focus : tabindex=1 tabindex=3 tabindex=2.
+- __autofocus__ : L'élément a le focus au chargement de la page. Attribut sans paramètre.
+- __tabindex__ : Détermine l'ordre de focus : tabindex=1 tabindex=3 tabindex=2.
 
 Par défaut, le focus *(tab)* suit l'ordre d'apparition des éléments dans le formulaire. Il est très important pour le confort utilisateur de bien penser son ordre de focus.
 
-|-> *A utiliser avec la **pseudo-classe** CSS* **:focus**
+|-> *A utiliser avec la __pseudo-classe__ CSS* __:focus__
 
 #### value="" & placeholder=""
-- **value** donne une valeur au champ, comme si l'utilisateur l'avait lui-même entrée, qui sera envoyée avec le formulaire.
-- **placeholder** donne une indication à l'utilisateur, sans toucher à la valeur ; il disparaît au premier caractère tapé. Le placeholder n'est jamais envoyé avec le formulaire.
+- __value__ donne une valeur au champ, comme si l'utilisateur l'avait lui-même entrée, qui sera envoyée avec le formulaire.
+- __placeholder__ donne une indication à l'utilisateur, sans toucher à la valeur ; il disparaît au premier caractère tapé. Le placeholder n'est jamais envoyé avec le formulaire.
 
 #### checked
 Pour les cases à cocher uniquement : case cochée au chargement de la page.
